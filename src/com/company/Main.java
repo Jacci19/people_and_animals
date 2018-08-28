@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Main {
@@ -55,5 +56,12 @@ public class Main {
         set.add(kamil);
         set.add(youngKamil);
         System.out.println(set.size());
+
+        HashMap<String, Person> map = new HashMap<>();
+        map.put("kamil", kamil);
+        map.put("kamilparzych", kamil);
+        System.out.println(map);
+        System.out.println(map.get("kamil"));
+        System.out.println(map.get("jacek"));
     }
 }
