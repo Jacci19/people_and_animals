@@ -32,10 +32,13 @@ public class Main {
 //        people.add("nowa osoba");
         System.out.println(people);
 
-        for (Object person : people) {
-            Person person1 = (Person) person;
-
-            System.out.println(person1.getFullName());
+//        for (Object person : people) {
+//            Person person1 = (Person) person;
+//
+//            System.out.println(person1.getFullName());
+//        }
+        for (Person person : people) {
+            System.out.println(person.getFullName());
         }
     }
 }
