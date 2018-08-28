@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,5 +24,18 @@ public class Main {
         Student jan = new Student("jan", "kowalski", 22, "123456");
 
         System.out.println(jan.equals(jacek));
+
+        ArrayList<Person> people = new ArrayList<>();
+        people.add(kamil);
+        people.add(jacek);
+        people.add(jan);
+//        people.add("nowa osoba");
+        System.out.println(people);
+
+        for (Object person : people) {
+            Person person1 = (Person) person;
+
+            System.out.println(person1.getFullName());
+        }
     }
 }
