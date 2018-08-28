@@ -63,5 +63,13 @@ public class Main {
         System.out.println(map);
         System.out.println(map.get("kamil"));
         System.out.println(map.get("jacek"));
+
+        Animal horse = new Animal("horse");
+        Animal rabbit = new Animal("rabbit");
+        ArrayList<Animal> animals = new ArrayList<>();
+        animals.add(horse);
+        animals.add(rabbit);
+        System.out.println(animals);
+
     }
 }

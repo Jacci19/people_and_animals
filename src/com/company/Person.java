@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements RepresentableByFullName {
     private String firstName;
     private String lastName;
     private int age;
@@ -46,10 +46,6 @@ public class Person {
         this.age = age;
     }
 
-    public String getFullName() {
-        return this.firstName + " " + this.lastName;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -61,5 +57,10 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName, age);
+    }
+
+    @Override
+    public String getFullName() {
+        return this.firstName + " " + this.lastName;
     }
 }
