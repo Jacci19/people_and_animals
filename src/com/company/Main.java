@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
 
@@ -46,5 +47,13 @@ public class Main {
 
         people.add(kamil);
         System.out.println(people.size());
+
+        HashSet<Person> set = new HashSet<>();
+        set.add(kamil);
+        set.add(jacek);
+        set.add(jan);
+        set.add(kamil);
+        set.add(youngKamil);
+        System.out.println(set.size());
     }
 }
