@@ -71,5 +71,13 @@ public class Main {
         animals.add(rabbit);
         System.out.println(animals);
 
+        ArrayList<RepresentableByFullName> fullNameArrayList = new ArrayList<>();
+        fullNameArrayList.addAll(people);
+        fullNameArrayList.addAll(animals);
+
+        for (RepresentableByFullName object : fullNameArrayList) {
+            System.out.println(object.getFullName());
+        }
+
     }
 }
