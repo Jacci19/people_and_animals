@@ -43,5 +43,8 @@ public class Main {
 
         System.out.println(people.contains(kamil));
         System.out.println(people.contains(youngKamil));
+
+        people.add(kamil);
+        System.out.println(people.size());
     }
 }
