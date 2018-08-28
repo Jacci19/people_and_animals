@@ -40,5 +40,8 @@ public class Main {
         for (Person person : people) {
             System.out.println(person.getFullName());
         }
+
+        System.out.println(people.contains(kamil));
+        System.out.println(people.contains(youngKamil));
     }
 }
