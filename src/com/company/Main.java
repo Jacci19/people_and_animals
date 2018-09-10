@@ -9,11 +9,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Test");
 
-        Person kamil = new Person("kamil", "parzych", 32);
+        Person kamil = new Person("kamil", "parzych", 32); //test
 
         System.out.println(kamil);
 
-        Person jacek = new Person("jacek", "popiołek", 36);
+        Person jacek = new Person("jacek", "popiołek", 36); //test2
 
         System.out.println(jacek);
 
