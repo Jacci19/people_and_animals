@@ -80,5 +80,9 @@ public class Main {
             System.out.println(object.getFullName());
         }
 
+        Student_1stYear Marek = new Student_1stYear("Marek", "Pawlak", 21, "2345", 140);
+
+        System.out.println(Marek.getMatureScore());
+
     }
 }
