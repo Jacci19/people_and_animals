@@ -19,11 +19,11 @@ public class Main {
 
         System.out.println(kamil.equals(jacek));
 
-        Person youngKamil = new Person("kamil", "parzych", 16);
+        Person youngKamil = new Person("kamil", "parzych", 16); //test3
 
         System.out.println(kamil.equals(youngKamil));
 
-        Student jan = new Student("jan", "kowalski", 22, "123456");
+        Student jan = new Student("jan", "kowalski", 22, "123456"); //test4
 
         System.out.println(jan.equals(jacek));
 
