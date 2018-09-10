@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Objects;
 
-public class Person implements RepresentableByFullName {
+public class Person implements RepresentableByFullName, SoundEmitable {
     private String firstName;
     private String lastName;
     private int age;
@@ -62,5 +62,10 @@ public class Person implements RepresentableByFullName {
     @Override
     public String getFullName() {
         return this.firstName + " " + this.lastName;
+    }
+
+    @Override
+    public void emitSound() {
+        System.out.println("Hello!!!");
     }
 }

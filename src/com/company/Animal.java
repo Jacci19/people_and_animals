@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Objects;
 
-public class Animal implements RepresentableByFullName {
+public class Animal implements RepresentableByFullName, SoundEmitable {
     private String name;
 
     public Animal(String name) {
@@ -40,5 +40,10 @@ public class Animal implements RepresentableByFullName {
     @Override
     public String getFullName() {
         return this.name;
+    }
+
+    @Override
+    public void emitSound() {
+        System.out.println("Wrrrrrrr");
     }
 }

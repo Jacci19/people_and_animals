@@ -1,6 +1,6 @@
 package com.company;
 
-public class Student extends Person {
+public class Student extends Person{
 
     private String indexNo;
 
@@ -16,5 +16,10 @@ public class Student extends Person {
 
     public void setIndexNo(String indexNo) {
         this.indexNo = indexNo;
+    }
+
+    @Override
+    public void emitSound() {
+        System.out.println("WOOOW");
     }
 }

@@ -81,8 +81,20 @@ public class Main {
         }
 
         Student_1stYear Marek = new Student_1stYear("Marek", "Pawlak", 21, "2345", 140);
-
         System.out.println(Marek.getMatureScore());
+        Marek.emitSound();
+
+        Person michal = new Person("Michal", "Kos", 18);
+        michal.emitSound();
+
+        ArrayList<SoundEmitable> group1 = new ArrayList<>();
+        group1.add(horse);
+        group1.add(Marek);
+        System.out.println(group1);
+
+
+
+
 
     }
 }
